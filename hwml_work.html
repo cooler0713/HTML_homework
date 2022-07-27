@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>經理人的數據思維力</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<style>
+    nav {
+
+        background-color: #2c2c2c;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+
+    }
+
+    .box1 img {
+        max-width: 400px;
+        min-width: 100px;
+
+
+
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .box2 {
+
+        display: flex;
+        justify-content: center;
+        /*水平置中*/
+        align-items: center;
+        /*垂直置中*/
+        height: 100%;
+        width: 50%;
+    }
+
+    .box1 {
+        float: left;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box1 a {
+        padding-left: 30%;
+    }
+
+    .box2 a {
+        margin-right: 35px;
+        font-weight: 900;
+        /*粗體字語法*/
+    }
+
+    .box3 {
+        padding-right: 220px;
+    }
+
+    .box4 a,
+    .box5 a {
+        border-radius: 50px;
+        border-width: 3px;
+        padding: 0.4rem 0.8rem;
+        text-align: center;
+
+    }
+
+    .box4 a {
+        background: #00bfd5;
+    }
+
+    .box5 a {
+        background: #ff8200;
+    }
+
+    .box4 a:hover,
+    .box5 a:hover {
+        background: #bdcd03;
+    }
+
+    /***/
+
+    body {
+        background: url(images/10011.png) no-repeat fixed;
+        background-color: #0b142f;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .area1 {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .area1 img {
+        width: 600px;
+
+    }
+
+    .area1 div {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .area1 .text1 {
+        background-image: linear-gradient(90deg, #ffffff52 0%, #ffffff00 100%);
+        border-left: 4px solid #e99169;
+        display: inline-block;
+        padding: 1rem;
+        color: white;
+        padding: 2rem 1.5rem;
+        font-weight: 900;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .title {
+        background-color: #ff9d6b;
+        padding: 1%;
+        text-align: center;
+    }
+
+    .bgc1 {
+        background-image: linear-gradient(136deg, #2c8cbd 0%, #226687 40%, #22668780 100%);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+
+    }
+
+    .bgc2 {
+        background-image: linear-gradient(0deg, #00bfd578 0%, #0b2245 100%);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .text-a {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .text-b {
+        padding-left: 6%;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+
+
+    .text-b img {
+        width: 60px;
+        margin: 15px 0;
+
+    }
+
+    .text-b h5 {
+        font-size: 1.375rem;
+        font-weight: 800;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-b p {
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: white;
+        font-weight: 600;
+
+    }
+
+
+    .title1 {
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    .title2 {
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 1.5;
+        color: rgb(249, 238, 238);
+        text-align: center;
+    }
+
+    .title3 {
+        margin-bottom: 15px;
+        background: #cede00;
+        transform: rotate(-2deg);
+        color: #0d4562;
+        display: inline-block;
+        padding: 3px 25px;
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .title4 {
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(251, 246, 246);
+    }
+
+    .title5 {
+        padding-bottom: 3%;
+        text-align: center;
+        color: white;
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+
+
+    .title-text {
+        font-size: 1.75rem;
+        /* font-family: 'Oswald', sans-serif; */
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+    }
+
+    .title-text1 {
+        color: #cede00;
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .hashtag {
+        color: #cede00;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+        color: rgb(255, 248, 248);
+    }
+
+    h6 {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+        color: rgb(255, 248, 248);
+    }
+
+    .text2,
+    .text3,
+    .text4 {
+        display: inline-block;
+    }
+
+    .bgc2 img {
+        display: block;
+        margin: auto;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .bgc2 div {
+        margin: auto;
+
+    }
+
+    .bgc4 {
+        background-color: #226687;
+        padding-top: 3rem;
+        padding-bottom: 3%;
+    }
+
+    .bgc5 {
+        background-image: linear-gradient(45deg, #214b6c, #0f1835);
+        padding-top: 3rem;
+        padding-bottom: 3%;
+    }
+
+    .bgc6 {
+        padding-top: 3rem;
+        padding-bottom: 3%;
+    }
+
+    .bgc7 {
+        padding-top: 1rem;
+        padding-bottom: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    }
+
+    .bgc8 {
+        padding-top: 3rem;
+        padding-bottom: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    }
+
+    .bgc9 p {
+        text-align: center;
+        color: white;
+        line-height: 35px;
+        
+    }
+
+    .bgc9 {
+        background-color: black;
+        font-weight: 900;
+        padding:15px;
+    }
+
+    .bgc7 span {
+        font-size: 1.5rem;
+    }
+
+    .bgc7 h4 {
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    .bgc7 p {
+        color: white;
+        font-weight: 900;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        margin: 3% 0;
+    }
+
+    .bgc5-1 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    }
+
+
+
+    .bgc5 h4,
+    .title6 {
+        color: white;
+        padding-bottom: 3%;
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+
+
+    .bgc5 .text6 {
+        color: rgb(246, 244, 244);
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+    }
+
+    .title3-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.375rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: #f8f8f8;
+    }
+
+    .text5 span {
+        color: #cede00;
+    }
+
+
+
+    .boxa {
+        background-color: #bdcd03;
+        text-align: center;
+        background-position: center;
+        height: 129px;
+        width: 255px;
+        line-height: 40px;
+        margin-right: 35px;
+
+
+
+    }
+
+    .boxb {
+        background-color: #00bfd5;
+        text-align: center;
+        display: inline-block;
+        background-position: center;
+        height: 129px;
+        width: 255px;
+        line-height: 40px;
+        margin-right: 35px;
+    }
+
+    .boxb .p1,
+    .boxb .p3 {
+        color: white;
+
+    }
+
+    .group-box p {
+        font: size 6px;
+
+        font-weight: 900;
+
+    }
+
+    .group-box {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        display: flex;
+
+    }
+
+    .boxa:hover,
+    .boxb:hover {
+        background-color: #7b7b7b;
+    }
+
+    .bgc5 .p4 {
+        color: #f6f7f7;
+        font-weight: 900;
+    }
+
+
+
+    .bgc6-1 img {
+        border: 2px solid white;
+        width: 346px;
+        height: 176px;
+        height: 180px;
+    }
+
+    .bgc6-1 p {
+        font-weight: 900;
+        line-height: 30px;
+        color: white;
+    }
+
+    .bgc6-1 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+        display: flex;
+    }
+
+    .bgc6-1 div {
+        padding-right: 35px;
+    }
+
+    .up {
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+    }
+</style>
+
+<body>
+
+    <nav>
+
+        <div class="box1">
+            <a
+                href="https://biz-school.bnextmedia.com.tw/business-manager?_gl=1*19g4267*_ga*MTc4NTIyMzA1OS4xNjQ4NjIyNjc3*_ga_383SSRZR6Z*MTY0ODc5MzA4OC4yLjEuMTY0ODc5MzQ3OS42MA..">
+                <img src="images/10001.png" alt="">
+            </a>
+        </div>
+
+        <div class="box2">
+            <a href="">精彩課綱</a>
+            <a href="">課程資訊</a>
+            <div class="box4"><a href="">課程團票</a>
+            </div>
+            <div class="box5"><a href="">立即報名</a>
+            </div>
+            <div class="box3">
+                <a href="https://www.facebook.com/"> <img src="images/10002.png" width="30px" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="area1" id="area1">
+        <div>
+            <img src="images/10003.png" alt="">
+        </div>
+        <div>
+            <div class="text1">
+                全民瘋數據，你想像得到的所有事情，都以某種數據的形式存在。<br>
+                數字不會說話，也未必是真相，想做資料分析，不能只靠工程師，<br>
+                加強對數字與資料的敏感度，懂得洗選掏取，<br>
+                才能讓數據產生商業洞察，提升決策價值！
+
+            </div>
+        </div>
+    </section>
+
+    <div class="title">
+        <span class="title-text">
+            5/26(四) 張榮發國際會議中心
+        </span>
+    </div>
+
+    <section class="bgc1">
+
+        <div class="title1">
+            <span class="title-text1">
+                6小時 完整學習
+            </span>
+        </div>
+
+        <div class="text-a">
+            <div class="text2">
+                <h3>
+                    <span class="hashtag">#</span>建構全面數據思維
+                </h3>
+                <h6>
+                    從大數據到資料科學，<br>
+                    他們有什麼關聯？
+                </h6>
+            </div>
+
+            <div class="text3">
+                <h3>
+                    <span class="hashtag">#</span>對齊數據部門的分析語言
+                </h3>
+                <h6>
+                    原始資料到含金資料<br>
+                    的產出流程解析
+                </h6>
+            </div>
+
+            <div class="text4">
+                <h3>
+                    <span class="hashtag">#</span>問出對的商業問題
+                </h3>
+                <h6>
+                    從定義問題到拆解問題，<br>
+                    實戰案例全破解
+                </h6>
+            </div>
+        </div>
+    </section>
+
+    <section class="bgc2">
+        <div>
+            <h4 class="title2">
+                你是不是有碰到以下挑戰
+            </h4>
+            <img src="images/10004.png" alt="">
+        </div>
+        <div class="title3-1">
+            <h4 class="title3">
+                數據解讀與應用，帶你一一破解
+            </h4>
+        </div>
+        <div class="text5">
+            <p><span>#白話解析</span>
+                資料科學，用「關鍵字」降低工程師溝通障礙
+                <br>
+                從個案出發，解析企業
+                <span>#數據應用</span>
+                ，活用數據做決策！
+            </p>
+        </div>
+    </section>
+
+    <section class="abc">
+        <div class="title4">
+            精彩課綱
+        </div>
+    </section>
+
+    <section class="bgc4">
+        <h4 class="title5">
+            這堂課適合誰?
+        </h4>
+
+        <div class="text-b">
+            <div>
+                <img src="images/10007.svg" alt="">
+                <h5>團隊決策者</h5>
+                <p>精準判讀數據、驅動有價值的商業決策</p>
+            </div>
+
+            <div>
+                <img src="images/10008.svg" alt="">
+                <h5>專案執行者</h5>
+                <p>建立與數據／IT部門協作的共同語言</p>
+            </div>
+
+            <div>
+                <img src="images/10009.svg" alt="">
+                <h5>行銷、業務</h5>
+                <p>整理具說服力的數據，爭取資源</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bgc5">
+        <section class="bgc5-1">
+            <h4>
+                課程資訊
+            </h4>
+            <p class="text6">
+                活動日期：2022/5/26(四)09:30-16:50
+                <br>
+                地點：張榮發國際會議中心 <small>（台北市中山南路11號）</small>
+                <br>
+                票價費用：
+            </p>
+
+            <section class="group-box">
+                <div class="boxa">
+                    <p class="p1">早鳥88折優惠</p>
+
+                    <p class="p2">（5/19前報名）</p>
+
+                    <p class="p3">NT.4,000/人</p>
+                </div>
+
+                <div class="boxb">
+                    <p class="p1">三人以上團報</p>
+                    <br>
+                    <p class="p3">NT.3,700/人</p>
+                </div>
+
+                <div class="boxb">
+                    <p class="p1">一般報名</p>
+                    <br>
+                    <p class="p3">NT.4,500/人</p>
+                </div>
+
+                <div class="boxb">
+                    <p class="p1">限額學習優惠</p>
+                    <br>
+                    <p class="p3">NT.4,600/人</p>
+                </div>
+            </section>
+
+            <p class="p4">※本課程贈《經理人月刊》三期（６月號起算）</p>
+            <br>
+            <p class="p4">活動洽詢：02-8773-9808 #355 楊小姐<span style="color:#ff9d6b ;">karen.yang@managertoday.com.tw</span>
+            </p>
+            <br>
+            <p class="p4">主辦單位保留活動及課程大綱異動之權利，更新資訊以活動網站內容為主。</p>
+            <br>
+            <p class="p4">客服專線：02-8771-6326　 服務時間：週一到週五9:30~12:00；13:30~17:00</p>
+
+        </section>
+
+    </section>
+
+    <section class="bgc6">
+        <h4 class="title6">
+            延伸閱讀
+        </h4>
+        <section>
+            <section class="bgc6-1">
+                <div>
+                    <img src="images/10012.jpg" alt="">
+                    <p>【簡立峰專欄】Low-Code / No-Code時代來臨，寫程式還是人才標配嗎？</p>
+                </div>
+                <div>
+                    <img src="images/10013.jpg" alt="">
+                    <p>行銷人的數位能力≠懂程式碼！No Code時代來臨，你準備好了嗎？</p>
+                </div>
+                <div>
+                    <img src="images/10014.jpg" alt="">
+                    <p>想做資料分析，不能只靠工程師！管其毅：建立數據團隊前，主管必懂的2個觀念</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="bgc7">
+            <h4>常見問題</h4>
+            <p>
+                <span> Q. 我有購買課程團票方案，請問是否可以折抵於此課程？</span>
+                <br>
+                可以的，提醒您，一人一堂課使用乙張票，恕不退還差價。
+            </p>
+            <p>
+                <span> Q. 公司申請報帳有時間限制，付款後大概多久可以收到發票呢？</span>
+                <br>
+                您付款完成後的兩週內，我們會將發票寄出。
+            </p>
+            <p>
+                <span> Q. 付款後若臨時有行程更動，可以退費嗎？</span>
+                <br>
+                若無法出席課程，請於課前來電或來信告知，可為您保留名額半年，半年內若對其他課程有興趣可轉移至該堂課，限轉移乙次；如需申請退款請於課程日前 8
+                <br>
+                日辦理，我們將收取課程的一成費用以及銀行轉帳之手續費，逾期恕不受理。例：8/5 課程申請退票日於 7/29 23:59 截止。
+            </p>
+            <p>
+                <span> Q. 我們公司同事超過2位一起報名，可以分不同月份接續下去收件嗎？</span>
+                <br>
+                2人以上報名，我們會自動做雜誌接續處理 ，統一給訂購人收件，同時發票開立一張，如果有不同需求再來電告知，謝謝。
+            </p>
+            <p>
+                <span> Q. 公司請款流程會超過三天，線上報名會逾期，該怎麼辦？</span>
+                <br>
+                請填寫「課程登記」表單，並於付款後填寫「匯款完成」表單，即算報名成功。
+            </p>
+        </section>
+    </section>
+    <div class="bgc8">
+        <img style="width: 95%;" src="images/10010.gif" alt="">
+    </div>
+
+    <footer class="bgc9" >
+        <div>
+            <a href="#area1" class="up"><img src="images/button-up.png" alt="" width="55"></a>
+            <p> Bnext Media 媒體群 | 數位時代 經理人 Shopping Design 創業小聚 未來商務
+                <br>
+                © 2021 Business Next Media Corp. All Rights Reserved. 106 台北市大安區光復南路102號9樓</p>
+        </div>
+    </footer>   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
